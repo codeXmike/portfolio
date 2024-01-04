@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/project.css">
+</head>
+<header>
+    <nav class="navbar">
+        
+        <div class="brand">
+            <span class="project-name">Portfolio</span>
+        </div>
+        <div class="toggle-collapse">
+            <div class="toggle-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>        
+        <div class="items">
+            <span class="nav-items"><a href="project.html">Home</a></span>
+            <span class="nav-items"><a href="services.html">Services</a></span>
+            <span class="nav-items"><a href="about.html">About</a></span>
+            <span class="nav-items"><a href="contact.html">Contact</a></span>
+        </div>
+        
+    </nav>
+
+</header>
+<hr>
+<body>
+    <center>
+        <h1 class="topic" style="font-size:2.3rem; color: aqua;"> <b style="color: rgb(255, 255, 255);">Contact</b> Me!</h1>
+        <div class="contain">
+    
+                
+                    <div class="cont">
+                        <form action="https://formspree.io/f/mrgngaan" method="POST">
+                            <center>
+                            
+                                <div class="input-contain"><input type="text" id="name" placeholder="Full Name" class="small-input" name="NAME" min="3" max="20" required><input type="text" id="email" placeholder="Email Address" onkeyup="validate()" class="small-input" name="EMAIL" required></div>
+                                <div class="input-contain"><input type="text" id="mobile" placeholder="Mobile Number(opt)" class="small-input" name="MOBILE NO" min="11" max="11" required><input type="text" id="subject" placeholder="Subject" class="small-input" name="SUBJECT" min="5" max="30" required></div>
+                    
+                    
+                
+                
+    
+                    
+                    
+                
+                                <input type="text" id="message" placeholder="Your Message" name="MESSAGE" class="large-input">
+                            </center>
+                        
+                    </div>
+                    
+
+            <button type="submit" id="submit" style="width: 160px; height: 60px; font-size: 1rem; font-weight: 300; margin-top: 10px;">Send Message</button>
+            <div class="error-message">
+                <b id="error1" style="color: red;">Write a valid email</b>
+            </div>
+                            </form>
+                            
+        </div>
+        
+    </center>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/jquery3.7.1.min.js"></script>
+<script src="./js/project.js"></script>
+</body>
+</html>
