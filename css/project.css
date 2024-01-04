@@ -472,6 +472,9 @@ button{
         margin: 0.2rem 0;
         text-decoration: solid;
     }
+    .large-input{
+        font-family: var(--Michael):
+    }
     .main-about{
         width: 320px;
     
