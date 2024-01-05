@@ -36,8 +36,8 @@ body{
     display: flex;
     justify-content: space-between;
     height: 0rem;
-    min-height: 12vh;
-    max-height: 12vh;
+    min-height: 60px;
+    max-height: 60px;
     overflow: hidden;
     transition: height 1s ease-in-out;
     width: 100%;
@@ -225,7 +225,7 @@ button{
 }
 .input-contain{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     padding-bottom: 0.4rem;
 }
 .large-input{
@@ -292,8 +292,8 @@ button{
     .navbar{
         flex-direction: column;
 
-            max-height: 72vh;
-            min-height: 12vh;
+            max-height: 380px;
+            min-height: 60px;
  
         
     }
@@ -471,9 +471,6 @@ button{
         color: white;
         margin: 0.2rem 0;
         text-decoration: solid;
-    }
-    .large-input{
-        font-family: var(--Michael):
     }
     .main-about{
         width: 320px;
