@@ -88,6 +88,43 @@ body {
   content: none;
 }
 
+.glass-card.glass-nav {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow:
+    0 28px 80px rgba(0, 0, 0, 0.55),
+    0 4px 30px rgba(0, 0, 0, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    inset 0 -22px 44px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(22px) saturate(180%);
+  -webkit-backdrop-filter: blur(22px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-card.glass-nav .glass-inner {
+  opacity: 0.18;
+}
+
+.glass-card.glass-nav .glass-reflection {
+  opacity: calc(var(--shine, 0) * 0.16);
+}
+
+.glass-card.glass-nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.35;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2) 10%,
+    transparent 40%
+  );
+  z-index: 0;
+}
+
 .glass-card::after {
   content: '';
   position: absolute;

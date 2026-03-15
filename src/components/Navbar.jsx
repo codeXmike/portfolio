@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <div className="sticky top-2 z-50 mx-auto w-full max-w-6xl px-1 w100:px-2 w250:top-3 w250:px-4">
       <div ref={wrapRef} className="relative">
-        <GlassCard className="px-4 py-3">
+        <GlassCard className="glass-nav px-4 py-3">
           <div className="flex items-center justify-between gap-3">
             <button
               type="button"
@@ -107,7 +107,7 @@ export default function Navbar() {
 
         {open ? (
           <div className="absolute left-0 right-0 top-full mt-2 w750:hidden">
-            <GlassCard className="p-2">
+            <GlassCard className="glass-nav p-2">
               <div className="grid gap-1">
                 {LINKS.map((l) => (
                   <button
