@@ -89,24 +89,21 @@ body {
 }
 
 .glass-card.glass-nav {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.02);
   box-shadow:
-    0 28px 80px rgba(0, 0, 0, 0.55),
-    0 4px 30px rgba(0, 0, 0, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    inset 0 -22px 44px rgba(0, 0, 0, 0.6),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(22px) saturate(180%);
-  -webkit-backdrop-filter: blur(22px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+    0 18px 60px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .glass-card.glass-nav .glass-inner {
-  opacity: 0.18;
+  opacity: 0.14;
 }
 
 .glass-card.glass-nav .glass-reflection {
-  opacity: calc(var(--shine, 0) * 0.16);
+  opacity: calc(var(--shine, 0) * 0.1);
 }
 
 .glass-card.glass-nav::before {
@@ -115,7 +112,7 @@ body {
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.18;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.8),
@@ -123,6 +120,24 @@ body {
     transparent 40%
   );
   z-index: 0;
+}
+
+.glass-card.glass-nav.glass-menu {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow:
+    0 22px 70px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px) saturate(155%);
+  -webkit-backdrop-filter: blur(14px) saturate(155%);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.glass-card.glass-nav.glass-menu .glass-inner {
+  opacity: 0.16;
+}
+
+.glass-card.glass-nav.glass-menu .glass-reflection {
+  opacity: calc(var(--shine, 0) * 0.06);
 }
 
 .glass-card::after {

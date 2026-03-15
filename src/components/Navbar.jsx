@@ -107,7 +107,7 @@ export default function Navbar() {
 
         {open ? (
           <div className="absolute left-0 right-0 top-full mt-2 w750:hidden">
-            <GlassCard className="glass-nav p-2">
+            <GlassCard className="glass-nav glass-menu p-2">
               <div className="grid gap-1">
                 {LINKS.map((l) => (
                   <button
