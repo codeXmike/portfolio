@@ -42,7 +42,7 @@ export default function Navbar() {
 
   return (
     <div className="sticky top-2 z-50 mx-auto w-full max-w-6xl px-1 w100:px-2 w250:top-3 w250:px-4">
-      <div ref={wrapRef} className="relative">
+      <div ref={wrapRef} className="relative isolate">
         <GlassCard className="glass-nav px-4 py-3">
           <div className="flex items-center justify-between gap-3">
             <button
