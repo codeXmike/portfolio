@@ -75,9 +75,6 @@ export default function Contact() {
                 Send <Send className="ml-2 h-4 w-4" />
               </a>
 
-              <p className="text-xs text-white/45">
-                Updates contact email in `src/lib/config.js`.
-              </p>
             </form>
           </GlassCard>
 
